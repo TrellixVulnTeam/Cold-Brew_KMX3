@@ -1,0 +1,39 @@
+:root {
+  --white: #fff;
+  --off-white: #f7f7f5;
+  --black: #000;
+  --off-black-1: #0d0d0d;
+  --off-black-2: #090909;
+
+  --brown-light: #c89261;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* Good practice to keep box-sizing inherit */
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 8rem 0;
+  background-color: var(--black);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  background-image: linear-gradient(
+    135deg,
+    var(--off-black-1),
+    var(--off-black-2)
+  );
+  border-radius: 4rem;
+}

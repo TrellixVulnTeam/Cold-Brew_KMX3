@@ -1,0 +1,11 @@
+.hero {
+  height: 50rem;
+  padding: 3.2rem;
+  &__heading {
+    color: var(--off-white);
+  }
+
+  &__sub-heading {
+    color: var(--brown-light);
+  }
+}
