@@ -1,0 +1,33 @@
+.button-click {
+  outline: var(--off-white) solid 1px;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem 1.6rem;
+  box-shadow: inset 0 0 0 1px var(--off-white);
+
+  background-color: transparent;
+  color: var(--brown-light);
+
+  font-weight: 400;
+  font-size: 1.6rem;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section-button {
+  // outline: var(--off-black-3) solid 1px;
+  border: none;
+  border-radius: 5px;
+  padding: 0.4rem 0.8rem;
+  // box-shadow: inset 0 0 0 1px var(--off-black-3);
+
+  display: block;
+  background-color: transparent;
+  color: var(--brown-light);
+
+  font-weight: 500;
+  font-size: 1.2rem;
+
+  text-transform: capitalize;
+}

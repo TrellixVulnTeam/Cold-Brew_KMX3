@@ -10,17 +10,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Quicksand:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Satisfy:wght@400;500;700&family=Quicksand:wght@100;400;500;700&display=swap"
       rel="stylesheet"
     />
 
-    <title>Coffee 101 | Cold Brew : Coffee for hot days</title>
+    <title>Caffeine 101 | Cold Brew : Coffee for hot days</title>
   </head>
-  <body>
+  <body id="scrollbar">
     <main class="container">
       <!-- Header -->
       <header class="header">
-        <a href="#" class="header__logo">Coffee 101</a>
+        <a href="#" class="header__logo">Caffeine 101</a>
         <nav class="header__nav">
           <ul class="header__nav__list">
             <li>
@@ -36,17 +36,101 @@
               <a class="header__nav__list--link" href="#">Events</a>
             </li>
             <li>
-              <a class="header__nav__list--link nav-cta" href="#">contact</a>
+              <a class="header__nav__list--link nav-cta" href="#">Contact</a>
             </li>
           </ul>
         </nav>
+        <form action="#" class="header__form">
+          <input type="text" class="header__form--input" placeholder="Search" />
+        </form>
       </header>
 
       <!-- Hero Section -->
       <div class="hero">
-        <h1 class="hero__heading">&ndash; Cold Brew</h1>
-        <h2 class="hero__sub-heading">Cold coffee for hot days</h2>
+        <div class="hero__content">
+          <h1 class="hero__content--heading">&ndash;Cold Brew</h1>
+          <h2 class="hero__content--sub-heading">Cold coffee for hot days</h2>
+          <div class="hero__content--text">
+            <button class="hero__content--text__button button-click">
+              Recipes
+            </button>
+            <p class="hero__content--text__para">
+              Click here for detailed informtion
+            </p>
+          </div>
+          <p class="hero__note">
+            <span class="hero__note--icon"> l </span>
+            Brewed over hours, not minutes. Cold Brew offers a smoother taste
+            than traditional iced coffees.
+          </p>
+        </div>
+
+        <div class="hero__photo">
+          <picture>
+            <img
+              src="img/Black Cup 1.png"
+              class="hero__photo-cup"
+              id="hero__photo-cup"
+              alt="photo of a flipped paper cup"
+            />
+            <script type="text/javascript">
+              let image = document.getElementById("hero__photo-cup");
+              let images = [
+                "img/Black Cup.png",
+                "img/Black Cup 1.png",
+                "img/Black Cup 2.png",
+              ];
+
+              setInterval(function () {
+                let random = Math.floor(Math.random() * 3);
+                image.src = images[random];
+              }, 1200);
+            </script>
+          </picture>
+        </div>
+      </div>
+
+      <!-- Section How-->
+      <div class="section-how">
+        <div class="section-how__heading">
+          <div class="section-how__heading--main">How it's made</div>
+          <div class="section-how__heading--sub">
+            every coffee bean is selected by our best coffee beans selectors
+          </div>
+        </div>
+        <div class="section-how__image">
+          <img
+            src="img/Coffee-Bag.png "
+            class="section-how__image--cold_brew_bottle"
+            alt="Concentrated coffee in a bottle with cold brew branding"
+          />
+        </div>
+        <div class="section-how__content">
+          <div class="section-how__content--breif">Secret recipe</div>
+          <div class="section-how__content--heading">
+            Every big product has it's own secret
+          </div>
+          <div class="section-how__content--text">
+            Since 1984 <b>Caffeine 101</b> is keeping his special repie in a
+            secret place where no one can find it. it has been passed down
+            through generations and generations till now.Someone guessed it's
+            the ay the coffee beans are grown, someothers are sure is a special
+            ingredient added during the brewing. We'll never know but one thing
+            is
+
+            <button class="section-button margin-top-sm">Read more</button>
+          </div>
+        </div>
       </div>
     </main>
   </body>
 </html>
+
+<script
+  type="module"
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
