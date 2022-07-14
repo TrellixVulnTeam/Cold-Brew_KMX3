@@ -3,7 +3,7 @@ body {
   font-weight: 400;
   line-height: 1.5; }
 
-margin-top-sm {
+.margin-top-sm {
   margin-top: 2rem !important; }
 
 :root {
@@ -58,22 +58,33 @@ body {
   padding: 0.8rem 1.6rem;
   box-shadow: inset 0 0 0 1px var(--off-white);
   background-color: transparent;
-  color: var(--brown-light);
+  color: var(--off-white);
   font-weight: 400;
   font-size: 1.6rem;
   text-transform: uppercase;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  transition: all 0.3s ease; }
+  .button-click:hover {
+    color: var(--off-black-3);
+    background-color: var(--off-white); }
 
 .section-button {
+  outline: var(--off-black-3) solid 1px;
   border: none;
-  border-radius: 5px;
-  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  padding: 0.6rem 1.2rem;
+  box-shadow: inset 0 0 0 1px var(--off-black-3);
   display: block;
   background-color: transparent;
-  color: var(--brown-light);
-  font-weight: 500;
+  color: var(--off-black-3);
+  font-weight: 600;
   font-size: 1.2rem;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease; }
+  .section-button:hover {
+    color: var(--off-white);
+    background-color: var(--off-black-3); }
 
 .header {
   display: flex;
@@ -177,16 +188,17 @@ textarea {
     .hero__content--text {
       display: flex;
       align-items: center;
-      justify-content: space-between; }
+      gap: 4.8rem; }
       .hero__content--text__para {
         font-size: 1.4rem;
         letter-spacing: 0.5px;
         color: var(--grey-1);
         cursor: pointer; }
   .hero__photo-cup {
-    max-width: 80%; }
+    max-width: 80%;
+    height: auto; }
   .hero__note {
-    padding-top: 9.6rem;
+    padding-top: 12.8rem;
     display: flex;
     max-width: 30rem;
     font-size: 1.6rem;
@@ -199,6 +211,99 @@ textarea {
       font-weight: 400;
       color: var(--grey-1); }
 
+.section__history {
+  min-height: 80rem;
+  display: grid;
+  padding: 3.2rem;
+  grid-template-columns: 1fr 1fr;
+  color: var(--off-white);
+  background-image: linear-gradient(135deg, var(--off-black-1), var(--off-black-2)); }
+  .section__history-main {
+    grid-column: 1 / -1;
+    margin: 0 auto;
+    margin-top: 3.2rem; }
+    .section__history-main__heading {
+      font-size: 6.4rem;
+      font-weight: 500;
+      letter-spacing: 0.5px; }
+    .section__history-main__sub-heading {
+      font-size: 1.8rem;
+      font-weight: 500;
+      font-family: "Satisfy";
+      color: var(--grey-2);
+      text-align: center;
+      letter-spacing: 1px; }
+  .section__history--content {
+    grid-column: 1 / 1;
+    padding: 8rem; }
+    .section__history--content__breif {
+      font-size: 4.8rem;
+      font-weight: 500;
+      font-family: "Satisfy";
+      color: var(--brown-light);
+      text-transform: capitalize; }
+    .section__history--content__heading {
+      margin-top: -1.8rem;
+      margin-bottom: 0.6rem;
+      font-size: 2.4rem;
+      letter-spacing: -0.2px;
+      font-weight: 500;
+      font-family: "Quicksand"; }
+    .section__history--content__text {
+      max-width: 50rem;
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 2rem;
+      font-family: "Quicksand";
+      hyphens: auto;
+      color: var(--grey-3); }
+    .section__history--content__arrow {
+      font-weight: 700;
+      font-size: 4.8rem;
+      font-family: "Quicksand";
+      color: var(--grey-3);
+      margin-left: 2.4rem; }
+  .section__history--image {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative; }
+    .section__history--image-content {
+      position: relative;
+      z-index: 50;
+      order: 1;
+      max-width: 40rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .section__history--image-content--icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12rem;
+        font-weight: 400;
+        color: var(--grey-1); }
+      .section__history--image-content--text {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: var(--off-black-3);
+        letter-spacing: 0.5px; }
+    .section__history--image-coffeebean {
+      width: 35%;
+      height: auto;
+      position: relative;
+      z-index: 10;
+      padding-left: 3.2rem; }
+    .section__history--image::before {
+      content: "";
+      width: 100%;
+      padding-bottom: 50%;
+      border-top-left-radius: 1000px;
+      border-bottom-left-radius: 1000px;
+      left: 3.2rem;
+      background-color: var(--off-white);
+      position: absolute; }
+
 .section-how {
   background-color: var(--off-white);
   display: grid;
@@ -206,7 +311,7 @@ textarea {
   grid-template-columns: 2fr 2fr;
   position: relative; }
   .section-how::after {
-    content: "hwl";
+    content: "";
     position: absolute;
     background-color: var(--brown-light);
     width: 30%;
@@ -218,29 +323,32 @@ textarea {
     margin-top: 3.2rem; }
     .section-how__heading--main {
       text-align: center;
-      font-size: 4rem;
-      letter-spacing: -0.2px;
-      font-weight: 700;
-      text-transform: uppercase;
+      text-transform: capitalize;
       color: var(--off-black-3);
       font-family: "Quicksand";
-      margin: 0 auto; }
+      margin: 0 auto;
+      font-size: 6.4rem;
+      font-weight: 500;
+      letter-spacing: 0.5px; }
     .section-how__heading--sub {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       font-weight: 500;
       font-family: "Satisfy";
-      color: var(--grey-2); }
+      color: var(--grey-2);
+      letter-spacing: 1px; }
   .section-how__image {
-    grid-column: 1 / 1; }
+    grid-column: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
     .section-how__image--cold_brew_bottle {
-      max-height: 100%;
+      max-width: 100%;
       z-index: 2;
-      position: relative;
-      padding-left: 4rem; }
+      position: relative; }
   .section-how__content {
-    padding: 12rem; }
+    padding: 11.2rem; }
     .section-how__content--breif {
-      font-size: 1.8rem;
+      font-size: 2.4rem;
       font-weight: 500;
       font-family: "Satisfy";
       color: var(--grey-3);
@@ -248,13 +356,15 @@ textarea {
     .section-how__content--heading {
       margin-bottom: 0.4rem;
       font-size: 2.4rem;
-      letter-spacing: -0.3px;
+      letter-spacing: -0.2px;
       font-weight: 500;
       font-family: "Quicksand";
       color: var(--off-black-3); }
     .section-how__content--text {
+      max-width: 45rem;
       font-size: 1.2rem;
       font-weight: 400;
       line-height: 2rem;
       font-family: "Quicksand";
-      color: var(--off-black-3); }
+      color: var(--off-black-3);
+      hyphens: auto; }

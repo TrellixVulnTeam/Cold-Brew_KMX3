@@ -6,7 +6,7 @@
   grid-template-columns: 2fr 2fr;
   position: relative;
   &::after {
-    content: "hwl";
+    content: "";
     position: absolute;
     background-color: var(--brown-light);
     width: 30%;
@@ -20,38 +20,42 @@
     margin-top: 3.2rem;
     &--main {
       text-align: center;
-      font-size: 4rem;
-      letter-spacing: -0.2px;
-      font-weight: 700;
-      text-transform: uppercase;
+      text-transform: capitalize;
       color: var(--off-black-3);
       font-family: "Quicksand";
       margin: 0 auto;
+
+      font-size: 6.4rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
     }
 
     &--sub {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       font-weight: 500;
       font-family: "Satisfy";
       color: var(--grey-2);
+      letter-spacing: 1px;
     }
   }
 
   &__image {
     grid-column: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &--cold_brew_bottle {
-      max-height: 100%;
+      max-width: 100%;
       z-index: 2;
       position: relative;
-      padding-left: 4rem;
     }
   }
 
   &__content {
-    padding: 12rem;
+    padding: 11.2rem;
     &--breif {
-      font-size: 1.8rem;
+      font-size: 2.4rem;
       font-weight: 500;
       font-family: "Satisfy";
       color: var(--grey-3);
@@ -61,17 +65,19 @@
     &--heading {
       margin-bottom: 0.4rem;
       font-size: 2.4rem;
-      letter-spacing: -0.3px;
+      letter-spacing: -0.2px;
       font-weight: 500;
       font-family: "Quicksand";
       color: var(--off-black-3);
     }
     &--text {
+      max-width: 45rem;
       font-size: 1.2rem;
       font-weight: 400;
       line-height: 2rem;
       font-family: "Quicksand";
       color: var(--off-black-3);
+      hyphens: auto;
     }
   }
 }

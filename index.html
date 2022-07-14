@@ -113,13 +113,89 @@
           <div class="section-how__content--text">
             Since 1984 <b>Caffeine 101</b> is keeping his special repie in a
             secret place where no one can find it. it has been passed down
-            through generations and generations till now.Someone guessed it's
+            through generations and generations till now. Someone guessed it's
             the ay the coffee beans are grown, someothers are sure is a special
-            ingredient added during the brewing. We'll never know but one thing
-            is
+            ingredient added during the brewing. We'll never know but one ...
 
             <button class="section-button margin-top-sm">Read more</button>
           </div>
+        </div>
+      </div>
+
+      <!-- Section history -->
+      <div class="section__history">
+        <div class="section__history-main">
+          <div class="section__history-main__heading">
+            Story of a coffee bean
+          </div>
+          <div class="section__history-main__sub-heading">
+            Ofcourse you can peep into our story, look how we brewed our coffee
+          </div>
+        </div>
+
+        <div class="section__history--content">
+          <div class="section__history--content__breif">1984</div>
+          <div class="section__history--content__heading">
+            Birth of brand new taste
+          </div>
+          <div class="section__history--content__text">
+            1984, 16th of April is the day of the birth of Caffeine 101, a new
+            brand ready to spread his essence.
+          </div>
+          <span class="section__history--content__arrow">&darr;</span>
+
+          <div class="section__history--content__breif">1999</div>
+          <div class="section__history--content__heading">
+            New beans in our team
+          </div>
+          <div class="section__history--content__text">
+            In this year, Caffeine 101 release new different kind of beans:
+            Arabica, Robusta, Excelsa, and Liberica.
+          </div>
+          <span class="section__history--content__arrow">&darr;</span>
+
+          <div class="section__history--content__breif">2019</div>
+          <div class="section__history--content__heading">
+            Logo and Networking
+          </div>
+          <div class="section__history--content__text">
+            To match the modern day competition, Caffeine 101 took a complete
+            face change in 2019 to make it more Hipster.
+          </div>
+        </div>
+
+        <div class="section__history--image">
+          <div class="section__history--image-content">
+            <span class="section__history--image-content--icon"> l </span>
+            <span class="section__history--image-content--text">
+              Although making coffee is straightforward yet it has unseen
+              complex layers and our job is to mix our expertise with your
+              coffee and bring you, your headstart for the day.
+            </span>
+          </div>
+          <img
+            src="img/Coffee-beans_1-removebg-preview.png"
+            class="section__history--image-coffeebean"
+            id="section__history--image-coffeebean"
+            alt="photo of a flipped paper cup"
+          />
+          <script type="text/javascript">
+            let image2 = document.getElementById(
+              "section__history--image-coffeebean"
+            );
+            let images2 = [
+              "img/Coffee-beans_1-removebg-preview.png",
+              "img/Coffee-beans_2-removebg-preview.png",
+              "img/Coffee-beans_3-removebg-preview.png",
+              "img/Coffee-beans_4-removebg-preview.png",
+              "img/Coffee-beans_5-removebg-preview.png",
+            ];
+
+            setInterval(function () {
+              let random = Math.floor(Math.random() * 5);
+              image2.src = images2[random];
+            }, 600);
+          </script>
         </div>
       </div>
     </main>
