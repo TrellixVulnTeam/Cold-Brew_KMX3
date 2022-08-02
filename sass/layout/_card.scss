@@ -1,0 +1,180 @@
+.section-products {
+  padding: 3.2rem 3.2rem 0 3.2rem;
+  margin-bottom: 9.6rem;
+
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    height: 40rem;
+    gap: 4.8rem;
+  }
+
+  &__title {
+    grid-column: 1 / -1;
+    margin: 0 auto;
+    margin-top: 9.6rem;
+    margin-bottom: 6.4rem;
+    text-align: center;
+    &--heading {
+      font-size: 6.4rem;
+      font-weight: 500;
+      text-transform: capitalize;
+      letter-spacing: 0.5px;
+      color: var(--off-white);
+    }
+    &--subheading {
+      font-size: 1.8rem;
+      font-weight: 400;
+      font-family: "Lobster Two";
+      color: var(--grey-2);
+      letter-spacing: 1.5px;
+    }
+  }
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  max-width: 35rem;
+  border-radius: 4rem;
+  overflow: hidden;
+  position: relative;
+
+  &--1 {
+    background-color: #cfecf7;
+    background-image: url(/img/Group5.png);
+    background-size: cover;
+  }
+  &--2 {
+    background-color: #e1c9e1;
+    background-image: url(/img/Group6.png);
+    background-size: cover;
+  }
+  &--3 {
+    background-color: #ecc1bc;
+    background-image: url(/img/Group7.png);
+    background-size: cover;
+  }
+  &--4 {
+    background-color: #f9dde0;
+    background-image: url(/img/Group8.png);
+    background-size: cover;
+  }
+  &__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-radius: 4rem;
+    background-color: var(--off-white);
+    transform: translateY(100%);
+    transition: 0.2s ease-in-out;
+  }
+
+  &__image {
+    width: 65%;
+    height: auto;
+    margin-top: 3.2rem;
+    // box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.3);
+    transition: 0.2s ease-in-out;
+  }
+
+  &__header {
+    position: relative;
+
+    padding: 2.4rem;
+    border-radius: 4rem 0 0 0;
+    background-color: var(--off-white);
+    transform: translateY(-100%);
+    transition: 0.2s ease-in-out;
+  }
+
+  &:hover &__overlay {
+    transform: translateY(0);
+  }
+
+  &:hover &__header {
+    transform: translateY(0);
+  }
+
+  &:hover &__image {
+    transform: scale(0.9);
+  }
+
+  &__arc {
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    z-index: 1;
+
+    path {
+      fill: var(--off-white);
+      d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+    }
+  }
+
+  &__header-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__title {
+    font-size: 3.2em;
+    font-family: "Lobster Two";
+    &--1 {
+      color: #82c3e6;
+    }
+    &--2 {
+      color: #a86ea9;
+    }
+    &--3 {
+      color: #b8524d;
+    }
+    &--4 {
+      color: #ef9ca7;
+    }
+  }
+
+  &__status {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--off-black-3);
+  }
+
+  &__description {
+    margin: 0 2.4rem 2.4rem 2.4rem;
+    font-size: 1.2rem;
+    color: var(--off-black-3);
+    font-family: "Quicksand";
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+  }
+
+  &__invite {
+    margin: 6.4rem 6.4rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: "Lobster Two";
+    color: var(--grey-2);
+    letter-spacing: 1.5px;
+    text-align: center;
+
+    span {
+      color: var(--off-white);
+      transition: color 0.2s ease;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--brown-light);
+      }
+    }
+  }
+}

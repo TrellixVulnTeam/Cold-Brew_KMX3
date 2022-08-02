@@ -1,0 +1,103 @@
+body {
+  box-sizing: border-box;
+  margin: 3.2rem;
+  background-color: var(--black);
+  color: var(--off-white);
+}
+
+.container-about {
+  margin: 0 auto;
+  background-image: linear-gradient(
+    135deg,
+    var(--off-black-1),
+    var(--off-black-2)
+  );
+  height: calc(100vh - 6.4rem);
+  padding: 2.4rem;
+  display: grid;
+  grid-template-columns: 0fr 1fr;
+  grid-template-rows: 1fr 4fr;
+  row-gap: 2.4rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4rem;
+
+  .coffee-cup {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    transform: rotate(135deg) translate(-47%, 0%);
+  }
+
+  .heading {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &--text {
+      font-size: 6.4rem;
+      font-weight: 500;
+      text-transform: capitalize;
+      letter-spacing: 0.5px;
+    }
+    &--subtext {
+      font-size: 1.8rem;
+      font-weight: 400;
+      font-family: "Lobster Two";
+      color: var(--grey-2);
+      text-align: center;
+      letter-spacing: 1.5px;
+    }
+  }
+
+  .img {
+    img {
+      max-width: 65%;
+      max-height: 65%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 75rem;
+    hyphens: auto;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+    margin: 0 auto;
+
+    & > * > span {
+      color: var(--brown-light);
+      font-size: 2rem;
+      font-weight: 700;
+      font-family: "lobster Two";
+      text-transform: capitalize;
+    }
+  }
+}
+
+#scrollbar {
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--black);
+    border-radius: 100px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--brown-light);
+    border-radius: 100px;
+  }
+}

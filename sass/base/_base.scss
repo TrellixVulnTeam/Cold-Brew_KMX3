@@ -8,11 +8,12 @@
   --off-black-3: #101010;
   --off-black-4: #191919;
 
-  --brown-light: #bc935a;
+  --brown-light: #b99158;
   --grey-1: #555;
   --grey-2: #999;
   --grey-3: #bbb;
 }
+$black: #000;
 
 *,
 *::after,
@@ -29,7 +30,7 @@ html {
 
 body {
   box-sizing: border-box;
-  margin: 3rem;
+  margin: 3.2rem;
   background-color: var(--black);
 }
 

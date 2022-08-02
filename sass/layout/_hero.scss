@@ -19,10 +19,11 @@
 
     &--sub-heading {
       color: var(--brown-light);
-      text-transform: uppercase;
-      font-size: 1.8rem;
-      font-weight: 500;
-      letter-spacing: 1px;
+      text-transform: capitalize;
+      font-family: "Lobster Two";
+      font-size: 2.4rem;
+      font-weight: 400;
+      letter-spacing: 1.5px;
       margin-bottom: 4.8rem;
       text-align: right;
     }
