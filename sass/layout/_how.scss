@@ -3,16 +3,22 @@
   // background-color: var(--brown-light);
   display: grid;
   padding: 3.2rem;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 1fr 1fr;
   position: relative;
   &::after {
     content: "";
     position: absolute;
     background-color: var(--brown-light);
-    width: 30%;
+    width: 25%;
     height: 100%;
     display: block;
   }
+  // .color {
+  //   grid-column: 1 / 2;
+  //   width: 100%;
+  //   height: 100%;
+  //   color: var(--brown-light);
+  // }
 
   &__heading {
     grid-column: 1 / -1;

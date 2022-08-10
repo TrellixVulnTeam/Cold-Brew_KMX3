@@ -28,14 +28,31 @@
 
   &__container {
     grid-column: 1 / 2;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
 
 .testimonials {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+
+  @include respond(sm-desktop) {
+    column-gap: 3.6rem;
+  }
+  @include respond(md-tab) {
+    column-gap: 2.4rem;
+  }
   &__fig {
-    padding: 4.8rem;
+    padding: 2.4rem;
+    @include respond(sm-desktop) {
+      padding: 3.6rem;
+    }
+    @include respond(md-tab) {
+      padding: 2.4rem;
+    }
     &--img {
       width: 6.4rem;
       border-radius: 50%;
@@ -60,10 +77,22 @@
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+
+  @include respond(sm-desktop) {
+    grid-template-columns: 1fr 1fr;
+  }
+
   gap: 1.6rem;
   padding: 1.6rem;
   &__item {
     overflow: hidden;
+
+    @include respond(sm-desktop) {
+      &:last-child {
+        display: none;
+        visibility: hidden;
+      }
+    }
 
     img {
       display: block;

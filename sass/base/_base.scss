@@ -26,6 +26,14 @@ $black: #000;
 
 html {
   font-size: 62.5%;
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12, 12/16
+  }
+
+  @include respond(md-tab) {
+    font-size: 56.25%; //1rem = 12, 12/16
+  }
 }
 
 body {
@@ -36,12 +44,11 @@ body {
 
 .container {
   margin: 0 auto;
-  background-image: linear-gradient(
-    135deg,
-    var(--off-black-1),
-    var(--off-black-2)
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(25, 25, 25) 0%,
+    rgb(15, 15, 15) 99.4%
   );
-  border-radius: 3rem;
 }
 
 #scrollbar {

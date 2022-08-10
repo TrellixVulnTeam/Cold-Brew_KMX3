@@ -12,7 +12,7 @@
   &-box {
     margin: 0 auto;
     text-align: center;
-    margin: 9.6rem;
+    margin: 9.6rem 9.6rem 19.2rem 9.6rem;
 
     &--heading {
       font-size: 4.8rem;
@@ -29,8 +29,6 @@
       color: var(--grey-2);
       letter-spacing: 1.5px;
       margin-bottom: 4.8rem;
-    }
-    &__form {
     }
   }
 }

@@ -1,0 +1,37 @@
+body {
+  box-sizing: border-box;
+  margin: 3.2rem;
+  background-color: var(--black);
+  color: var(--off-white);
+}
+
+.container-menu {
+  margin: 0 auto;
+  padding: 0 6.4rem;
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(20, 20, 20) 0%,
+    rgb(12, 12, 12) 99.4%
+  );
+  height: calc(100vh - 6.4rem);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 4.5fr;
+  gap: 6.4rem;
+}
+
+#scrollbar {
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--black);
+    border-radius: 100px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--brown-light);
+    border-radius: 100px;
+  }
+}

@@ -103,11 +103,12 @@
         font-weight: 400;
         color: var(--off-black-3);
         letter-spacing: 0.5px;
+        position: relative;
       }
     }
 
     &-coffeebean {
-      width: 35%;
+      width: 30%;
       height: auto;
       position: relative;
       z-index: 10;
@@ -116,7 +117,7 @@
     &::before {
       content: "";
       width: 100%;
-      padding-bottom: 50%;
+      padding-bottom: 40%;
       // border-radius: 50%;
       border-top-left-radius: 1000px;
       border-bottom-left-radius: 1000px;
