@@ -17,45 +17,481 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <title>Menu</title>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </head>
 
   <body id="scrollbar">
-    <div class="container-menu">
-      <header class="header-about">
-        <a href="#" class="header-about__logo">Caffeine 101</a>
-        <nav class="header__nav">
-          <ul class="header__nav__list">
-            <li>
-              <a class="header__nav__list--link" href="#">Home</a>
-            </li>
-            <li>
-              <a class="header__nav__list--link" href="#">Sign Up/In</a>
-            </li>
-            <li>
-              <a class="header__nav__list--link" href="#">Menu</a>
-            </li>
-            <li>
-              <a class="header__nav__list--link" href="#">Contact</a>
-            </li>
-            <li>
-              <a class="header__nav__list--link" href="#">About</a>
-            </li>
-            <li>
-              <div class="header-about__profile">
-                <div class="header-about__profile--name">Jappreet S.</div>
-                <div class="header-about__profile--photo">
-                  <img
-                    src="/img/jappreet-bitmoji.png"
-                    alt="Bitmoji of Jappreet Singh"
-                    class="profile"
-                  />
-                </div>
+    <!-- Header -->
+    <header class="header">
+      <a href="#" class="header__logo">Caffeine 101</a>
+      <nav class="header__nav">
+        <ul class="header__nav__list">
+          <li>
+            <a class="header__nav__list--link" href="#">About</a>
+          </li>
+          <li>
+            <a class="header__nav__list--link" href="#">Menu</a>
+          </li>
+          <li>
+            <a class="header__nav__list--link" href="#">Education</a>
+          </li>
+          <li>
+            <a class="header__nav__list--link" href="#">Offers</a>
+          </li>
+          <li>
+            <a class="header__nav__list--link nav-cta" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="menu-container">
+      <div class="menu-content">
+        <div class="menu-content__header">
+          <h2 class="menu-content__header--heading">
+            Time to <span>Taste</span>
+          </h2>
+          <h3 class="menu-content__header--subheading">
+            How can we serve you today?
+          </h3>
+          <div class="menu-content__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+            esse libero sapiente nisi, nam consequuntur blanditiis officiis
+            magni rem, harum voluptas earum tempore quae tempora voluptate
+            consectetur sequi repellat quo?
+          </div>
+        </div>
+      </div>
+
+      <!-- Right hanging cards -->
+      <div class="menu-do--1">
+        <div href="" class="menu-card menu-card--1">
+          <img src="img/Black Cup.png" class="menu-card__image" alt="" />
+          <div class="menu-card__overlay">
+            <div class="menu-card__header">
+              <svg class="menu-card__arc" xmlns="http://www.w3.org/2000/svg">
+                <path />
+              </svg>
+
+              <div class="menu-card__header-text">
+                <h3 class="menu-card__title menu-card__title--1">Espresso</h3>
+                <span class="menu-card__status">$ 3.75</span>
               </div>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <div class="menu-content"></div>
+            </div>
+            <div class="menu-card__details">
+              <ul class="menu-card-list">
+                <li>Espresso</li>
+                <li>Water</li>
+                <li>Water</li>
+                <li>Water</li>
+              </ul>
+              <button
+                class="card-add-btn hero__content--text__button button-click menu-button"
+              >
+                Add
+              </button>
+              <button
+                class="card-remove-btn hero__content--text__button button-click menu-button"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-do--2">
+        <div href="" class="menu-card menu-card--2">
+          <img src="img/Black Cup 2.png" class="menu-card__image" alt="" />
+          <div class="menu-card__overlay">
+            <div class="menu-card__header">
+              <svg class="menu-card__arc" xmlns="http://www.w3.org/2000/svg">
+                <path />
+              </svg>
+
+              <div class="menu-card__header-text">
+                <h3 class="menu-card__title menu-card__title--2">Espresso</h3>
+                <span class="menu-card__status">$ 3.75</span>
+              </div>
+            </div>
+            <div class="menu-card__details">
+              <ul class="menu-card-list">
+                <li>Espresso</li>
+                <li>Water</li>
+                <li>Water</li>
+                <li>Water</li>
+              </ul>
+              <button
+                class="card-add-btn hero__content--text__button button-click menu-button"
+              >
+                Add
+              </button>
+              <button
+                class="card-remove-btn hero__content--text__button button-click menu-button"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-do--3">
+        <div href="" class="menu-card menu-card--3">
+          <img src="img/Black Cup 1.png" class="menu-card__image" alt="" />
+          <div class="menu-card__overlay">
+            <div class="menu-card__header">
+              <svg class="menu-card__arc" xmlns="http://www.w3.org/2000/svg">
+                <path />
+              </svg>
+
+              <div class="menu-card__header-text">
+                <h3 class="menu-card__title menu-card__title--3">Espresso</h3>
+                <span class="menu-card__status">$ 3.75</span>
+              </div>
+            </div>
+            <div class="menu-card__details">
+              <ul class="menu-card-list">
+                <li>Espresso</li>
+                <li>Water</li>
+                <li>Water</li>
+                <li>Water</li>
+              </ul>
+              <button
+                class="card-add-btn hero__content--text__button button-click menu-button"
+              >
+                Add
+              </button>
+              <button
+                class="card-remove-btn hero__content--text__button button-click menu-button"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-do--4">
+        <div href="" class="menu-card menu-card--2">
+          <img src="img/Black Cup 2.png" class="menu-card__image" alt="" />
+          <div class="menu-card__overlay">
+            <div class="menu-card__header">
+              <svg class="menu-card__arc" xmlns="http://www.w3.org/2000/svg">
+                <path />
+              </svg>
+
+              <div class="menu-card__header-text">
+                <h3 class="menu-card__title menu-card__title--2">Espresso</h3>
+                <span class="menu-card__status">$ 3.75</span>
+              </div>
+            </div>
+            <div class="menu-card__details">
+              <ul class="menu-card-list">
+                <li>Espresso</li>
+                <li>Water</li>
+                <li>Water</li>
+                <li>Water</li>
+              </ul>
+              <button
+                class="card-add-btn hero__content--text__button button-click menu-button"
+              >
+                Add
+              </button>
+              <button
+                class="card-remove-btn hero__content--text__button button-click menu-button"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-do--5">
+        <div href="" class="menu-card menu-card--1">
+          <img src="img/Black Cup.png" class="menu-card__image" alt="" />
+          <div class="menu-card__overlay">
+            <div class="menu-card__header">
+              <svg class="menu-card__arc" xmlns="http://www.w3.org/2000/svg">
+                <path />
+              </svg>
+
+              <div class="menu-card__header-text">
+                <h3 class="menu-card__title menu-card__title--1">Espresso</h3>
+                <span class="menu-card__status">$ 3.75</span>
+              </div>
+            </div>
+            <div class="menu-card__details">
+              <ul class="menu-card-list">
+                <li>Espresso</li>
+                <li>Water</li>
+                <li>Water</li>
+                <li>Water</li>
+              </ul>
+              <button
+                class="card-add-btn hero__content--text__button button-click menu-button"
+              >
+                Add
+              </button>
+              <button
+                class="card-remove-btn hero__content--text__button button-click menu-button"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-do--6">
+        <div href="" class="menu-card menu-card--3">
+          <img src="img/Black Cup 1.png" class="menu-card__image" alt="" />
+          <div class="menu-card__overlay">
+            <div class="menu-card__header">
+              <svg class="menu-card__arc" xmlns="http://www.w3.org/2000/svg">
+                <path />
+              </svg>
+
+              <div class="menu-card__header-text">
+                <h3 class="menu-card__title menu-card__title--3">Espresso</h3>
+                <span class="menu-card__status">$ 3.75</span>
+              </div>
+            </div>
+            <div class="menu-card__details">
+              <ul class="menu-card-list">
+                <li>Espresso</li>
+                <li>Water</li>
+                <li>Water</li>
+                <li>Water</li>
+              </ul>
+              <button
+                class="card-add-btn hero__content--text__button button-click menu-button"
+              >
+                Add
+              </button>
+              <button
+                class="card-remove-btn hero__content--text__button button-click menu-button"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-do--7">
+        <div href="" class="menu-card menu-card--3">
+          <img src="img/Black Cup 1.png" class="menu-card__image" alt="" />
+          <div class="menu-card__overlay">
+            <div class="menu-card__header">
+              <svg class="menu-card__arc" xmlns="http://www.w3.org/2000/svg">
+                <path />
+              </svg>
+
+              <div class="menu-card__header-text">
+                <h3 class="menu-card__title menu-card__title--3">Espresso</h3>
+                <span class="menu-card__status">$ 3.75</span>
+              </div>
+            </div>
+            <div class="menu-card__details">
+              <ul class="menu-card-list">
+                <li>Espresso</li>
+                <li>Water</li>
+                <li>Water</li>
+                <li>Water</li>
+              </ul>
+              <button
+                class="card-add-btn hero__content--text__button button-click menu-button"
+              >
+                Add
+              </button>
+              <button
+                class="card-remove-btn hero__content--text__button button-click menu-button"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-do--8">
+        <div href="" class="menu-card menu-card--1">
+          <img src="img/Black Cup.png" class="menu-card__image" alt="" />
+          <div class="menu-card__overlay">
+            <div class="menu-card__header">
+              <svg class="menu-card__arc" xmlns="http://www.w3.org/2000/svg">
+                <path />
+              </svg>
+
+              <div class="menu-card__header-text">
+                <h3 class="menu-card__title menu-card__title--1">Espresso</h3>
+                <span class="menu-card__status">$ 3.75</span>
+              </div>
+            </div>
+            <div class="menu-card__details">
+              <ul class="menu-card-list">
+                <li>Espresso</li>
+                <li>Water</li>
+                <li>Water</li>
+                <li>Water</li>
+              </ul>
+              <button
+                class="card-add-btn hero__content--text__button button-click menu-button"
+              >
+                Add
+              </button>
+              <button
+                class="card-remove-btn hero__content--text__button button-click menu-button"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-do--9">
+        <div href="" class="menu-card menu-card--2">
+          <img src="img/Black Cup 2.png" class="menu-card__image" alt="" />
+          <div class="menu-card__overlay">
+            <div class="menu-card__header">
+              <svg class="menu-card__arc" xmlns="http://www.w3.org/2000/svg">
+                <path />
+              </svg>
+
+              <div class="menu-card__header-text">
+                <h3 class="menu-card__title menu-card__title--2">Espresso</h3>
+                <span class="menu-card__status">$ 3.75</span>
+              </div>
+            </div>
+            <div class="menu-card__details">
+              <ul class="menu-card-list">
+                <li>Espresso</li>
+                <li>Water</li>
+                <li>Water</li>
+                <li>Water</li>
+              </ul>
+              <button
+                class="card-add-btn hero__content--text__button button-click menu-button"
+              >
+                Add
+              </button>
+              <button
+                class="card-remove-btn hero__content--text__button button-click menu-button"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-do--10">
+        <div href="" class="menu-card menu-card--3">
+          <img src="img/Black Cup 1.png" class="menu-card__image" alt="" />
+          <div class="menu-card__overlay">
+            <div class="menu-card__header">
+              <svg class="menu-card__arc" xmlns="http://www.w3.org/2000/svg">
+                <path />
+              </svg>
+
+              <div class="menu-card__header-text">
+                <h3 class="menu-card__title menu-card__title--3">Espresso</h3>
+                <span class="menu-card__status">$ 3.75</span>
+              </div>
+            </div>
+            <div class="menu-card__details">
+              <ul class="menu-card-list">
+                <li>Espresso</li>
+                <li>Water</li>
+                <li>Water</li>
+                <li>Water</li>
+              </ul>
+              <button
+                class="card-add-btn hero__content--text__button button-click menu-button"
+              >
+                Add
+              </button>
+              <button
+                class="card-remove-btn hero__content--text__button button-click menu-button"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-do--11">
+        <div href="" class="menu-card menu-card--2">
+          <img src="img/Black Cup 2.png" class="menu-card__image" alt="" />
+          <div class="menu-card__overlay">
+            <div class="menu-card__header">
+              <svg class="menu-card__arc" xmlns="http://www.w3.org/2000/svg">
+                <path />
+              </svg>
+
+              <div class="menu-card__header-text">
+                <h3 class="menu-card__title menu-card__title--2">Espresso</h3>
+                <span class="menu-card__status">$ 3.75</span>
+              </div>
+            </div>
+            <div class="menu-card__details">
+              <ul class="menu-card-list">
+                <li>Espresso</li>
+                <li>Water</li>
+                <li>Water</li>
+                <li>Water</li>
+              </ul>
+              <button
+                class="card-add-btn hero__content--text__button button-click menu-button"
+              >
+                Add
+              </button>
+              <button
+                class="card-remove-btn hero__content--text__button button-click menu-button"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-do--12">
+        <div href="" class="menu-card menu-card--1">
+          <img src="img/Black Cup.png" class="menu-card__image" alt="" />
+          <div class="menu-card__overlay">
+            <div class="menu-card__header">
+              <svg class="menu-card__arc" xmlns="http://www.w3.org/2000/svg">
+                <path />
+              </svg>
+
+              <div class="menu-card__header-text">
+                <h3 class="menu-card__title menu-card__title--1">Espresso</h3>
+                <span class="menu-card__status">$ 3.75</span>
+              </div>
+            </div>
+            <div class="menu-card__details">
+              <ul class="menu-card-list">
+                <li>Espresso</li>
+                <li>Water</li>
+                <li>Water</li>
+                <li>Water</li>
+              </ul>
+              <button
+                class="card-add-btn hero__content--text__button button-click menu-button"
+              >
+                Add
+              </button>
+              <button
+                class="card-remove-btn hero__content--text__button button-click menu-button"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

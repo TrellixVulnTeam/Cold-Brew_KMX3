@@ -4,11 +4,14 @@ body {
 
 .header {
   display: flex;
-  padding: 3.2rem 6.4rem;
-  gap: 6.4rem;
+  padding: 2.8rem 6.4rem 0 6.4rem;
   align-items: center;
   justify-content: space-between;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
   z-index: 1000;
 
   &__logo {
@@ -22,20 +25,19 @@ body {
   }
 
   &__nav {
-    flex: 0 0 50%;
-
     &__list {
       display: flex;
       align-items: center;
       justify-content: space-around;
       list-style-type: none;
+      gap: 3.2rem;
       @include respond(sm-desktop) {
         gap: 3.2rem;
       }
 
       &--link {
         font-size: 1.6rem;
-        font-weight: 400;
+        font-weight: 500;
 
         text-decoration: none;
         letter-spacing: 1px;
@@ -46,7 +48,6 @@ body {
         border: none;
         border-bottom: 1px solid transparent;
 
-        &:link,
         &:hover {
           color: var(--brown-light);
         }

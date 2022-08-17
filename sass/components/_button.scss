@@ -8,8 +8,9 @@
   background-color: transparent;
   color: var(--off-white);
 
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.6rem;
+  font-family: "Quicksand";
 
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -44,5 +45,16 @@
   &:hover {
     color: var(--off-white);
     background-color: var(--off-black-3);
+  }
+}
+
+.menu-button {
+  color: var(--off-black-3) !important;
+  padding: 0.6rem 1.2rem !important;
+  font-size: 1.2rem !important;
+
+  &:hover {
+    color: var(--brown-light) !important;
+    background-color: var(--off-black-3) !important;
   }
 }

@@ -12,6 +12,9 @@
     width: 25%;
     height: 100%;
     display: block;
+    @include respond(md-tab) {
+      width: 20%;
+    }
   }
   // .color {
   //   grid-column: 1 / 2;
@@ -55,11 +58,20 @@
       max-width: 100%;
       z-index: 2;
       position: relative;
+      @include respond(big-tab) {
+        max-width: 90%;
+      }
     }
   }
 
   &__content {
     padding: 8.8rem;
+    @include respond(-tab) {
+      padding-top: 9.6rem;
+    }
+    @include respond(md-tab) {
+      padding-top: 9.6rem;
+    }
     &--breif {
       font-size: 3.2rem;
       font-weight: 400;
