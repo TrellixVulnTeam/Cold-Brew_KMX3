@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Quicksand:wght@100;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <title>Register/Login</title>
+  </head>
+
+  <body id="scrollbar" class="flip-page">
+    <header class="header">
+      <a href="#" class="header__logo">Caffeine 101</a>
+      <nav class="header__nav">
+        <ul class="header__nav__list">
+          <li>
+            <a class="header__nav__list--link" href="#">About</a>
+          </li>
+          <li>
+            <a class="header__nav__list--link" href="#">Menu</a>
+          </li>
+          <li>
+            <a class="header__nav__list--link" href="#">Education</a>
+          </li>
+          <li>
+            <a class="header__nav__list--link" href="#">Offers</a>
+          </li>
+          <li>
+            <a class="header__nav__list--link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="flip-card-container">
+      <div class="section">
+        <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
+        <label for="reg-log"></label>
+        <div class="card-3d-wrap">
+          <div class="card-3d-wrapper">
+            <div class="card-front">
+              <div class="center-wrap">
+                <div class="content">
+                  <h4 class="content__heading">Log In</h4>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      name="logemail"
+                      class="form-style"
+                      placeholder="Your Email"
+                      id="logemail"
+                      autocomplete="off"
+                    />
+                    <i class="input-icon uil uil-at"></i>
+                    <input
+                      type="password"
+                      name="logpass"
+                      class="form-style"
+                      placeholder="Your Password"
+                      id="logpass"
+                      autocomplete="off"
+                    />
+                    <i class="input-icon uil uil-lock-alt"></i>
+                    <a href="#" class="btn">submit</a>
+                    <p class="">
+                      <a href="#" class="link">Forgot your password?</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-back">
+              <div class="center-wrap">
+                <div class="section-content">
+                  <h4 class="content__heading">Sign Up</h4>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="logname"
+                      class="form-style"
+                      placeholder="Your Full Name"
+                      id="logname"
+                      autocomplete="off"
+                    />
+                    <i class="input-icon uil uil-user"></i>
+                    <input
+                      type="email"
+                      name="logemail"
+                      class="form-style"
+                      placeholder="Your Email"
+                      id="logemail"
+                      autocomplete="off"
+                    />
+                    <i class="input-icon uil uil-at"></i>
+
+                    <input
+                      type="password"
+                      name="logpass"
+                      class="form-style"
+                      placeholder="Your Password"
+                      id="logpass"
+                      autocomplete="off"
+                    />
+                    <input
+                      type="password"
+                      name="logpass"
+                      class="form-style"
+                      placeholder="Confirm Password"
+                      id="logpass"
+                      autocomplete="off"
+                    />
+
+                    <i class="input-icon uil uil-lock-alt"></i>
+                    <a href="#" class="btn">submit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

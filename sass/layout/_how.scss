@@ -103,3 +103,32 @@
     }
   }
 }
+
+// .read {
+//   height: 100vh;
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   background-color: burlywood;
+//   z-index: 1000;
+//   color: var(--off-white);
+//   opacity: 0.5;
+//   // body {
+//   //   backdrop-filter: blur(2px);
+//   // }
+
+//   &-box {
+//     height: 50rem;
+//     margin: 0 auto;
+//     background-color: var(--black);
+//     max-width: 120rem;
+//   }
+//   p {
+//     font-size: 6.4rem;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+// }
